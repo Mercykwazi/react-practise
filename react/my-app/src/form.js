@@ -1,36 +1,47 @@
 import React from 'react'
 
 export default class Form extends React.Component {
-    constructor(){
+    constructor() {
         super()
-        this.state={Name:"kwazi",LastName:"",email:"",Gender:""}
+        this.state = { Name: "", LastName: "", email: "", Gender: "" }
     }
     render() {
         return (
             <div>
+
                 {this.state.Name}
-              
-            <form >
-                <label>
-                    Name:
+
+                <form >
+                    <label>
+                        Name:
             <input type="text" />
-                </label><br />
-                <label>
-                    last Name:
+                    </label><br />
+
+                    <label>
+                        Surname:
             <input type="text" />
-                </label>
-                <label>
-                    email:
+                    </label><br />
+
+                    <label>
+                        Email:
             <input type="text" />
-                </label><br />
-                <label>
-                    Gender:
+                    </label><br />
+
+                    <label>
+                        <select>
+                    <option selected value="select">select</option>
+            <option value="both">Both</option>
+            <option value="male">male</option>
+            <option value="female">Female</option>
+          </select>
+                        Gender:
             <input type="text" />
-                </label><br />
-                <input type="submit" value="Submit" />
-            </form>
+                    </label><br />
+
+                    <input type="submit" value="Submit" />
+                </form>
             </div>
         )
-      
+
     }
 }
