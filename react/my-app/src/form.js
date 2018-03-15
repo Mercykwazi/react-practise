@@ -1,20 +1,22 @@
 import React from 'react'
+import  Handle from './event-handler'
 
 export default class Form extends React.Component {
     constructor() {
         super()
         this.state = { Name: "", LastName: "", email: "", Gender: "" }
     }
+    newstate(label, newValue) {
+        this.setState({ label: "" });
+    }
     render() {
         return (
             <div>
-
-                {this.state.Name}
-
                 <form >
                     <label>
-                        Name:
-            <input type="text" />
+                        Name:{this.state.Name}
+                        < Handler newstate={this.newstate.bind(this)} label="Name" />
+                        <input type="text" />
                     </label><br />
 
                     <label>
@@ -28,12 +30,6 @@ export default class Form extends React.Component {
                     </label><br />
 
                     <label>
-                        <select>
-                    <option selected value="select">select</option>
-            <option value="both">Both</option>
-            <option value="male">male</option>
-            <option value="female">Female</option>
-          </select>
                         Gender:
             <input type="text" />
                     </label><br />
