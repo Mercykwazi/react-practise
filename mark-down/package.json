@@ -1,0 +1,22 @@
+{
+  "name": "markdown",
+  "version": "1.0.0",
+  "description": "A test of a markdown viewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "mercykwazi@github"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "mercy",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3"
+  }
+}
